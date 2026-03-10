@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Atharva Naik — ML & AI Researcher</title>
+  <title>Atharva Naik — Data Science & ML Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -682,12 +682,12 @@
   <section id="hero">
     <div class="container">
       <div class="hero-inner">
-        <div class="hero-eyebrow fade-up">ML Engineer & AI Researcher</div>
+        <div class="hero-eyebrow fade-up">Data Science · ML Engineering · AI Research</div>
         <h1 class="fade-up">
           Atharva<br/><em>Naik</em>
         </h1>
         <p class="hero-bio fade-up">
-          MS Applied Data Science @ USC. Building at the intersection of deep learning, NLP, and computer vision — from fine-tuning foundation models on genomic data to end-to-end AI pipelines.
+          MS Applied Data Science @ USC. I build end-to-end data pipelines, train and deploy ML models, and turn messy datasets into actionable insights — spanning data engineering, analytics, and AI research.
         </p>
         <div class="hero-links fade-up">
           <a href="https://www.linkedin.com/in/atharva-naik-56290a257/" target="_blank" class="btn btn-primary">LinkedIn ↗</a>
@@ -724,25 +724,25 @@
         <div class="skill-cell">
           <div class="skill-label">Languages</div>
           <div class="skill-tags">
-            <span class="tag">Python</span><span class="tag">R</span><span class="tag">C++</span><span class="tag">SQL</span>
+            <span class="tag">Python</span><span class="tag">R</span><span class="tag">C++</span><span class="tag">SQL</span><span class="tag">NoSQL</span>
           </div>
         </div>
         <div class="skill-cell">
           <div class="skill-label">ML / AI</div>
           <div class="skill-tags">
-            <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">Transformers</span><span class="tag">Fine-Tuning</span><span class="tag">Computer Vision</span>
+            <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">Transformers</span><span class="tag">Fine-Tuning</span><span class="tag">scikit-learn</span><span class="tag">SHAP</span>
           </div>
         </div>
         <div class="skill-cell">
-          <div class="skill-label">Data & Modeling</div>
+          <div class="skill-label">Data Engineering & Analytics</div>
           <div class="skill-tags">
-            <span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Spark</span><span class="tag">Feature Engineering</span><span class="tag">MongoDB</span><span class="tag">Hadoop</span>
+            <span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Spark</span><span class="tag">ETL Pipelines</span><span class="tag">Feature Engineering</span><span class="tag">MongoDB</span><span class="tag">Hadoop</span><span class="tag">Tableau</span>
           </div>
         </div>
         <div class="skill-cell">
-          <div class="skill-label">Systems & Tools</div>
+          <div class="skill-label">Infrastructure & Tools</div>
           <div class="skill-tags">
-            <span class="tag">Docker</span><span class="tag">Azure</span><span class="tag">ROS</span><span class="tag">OpenCV</span><span class="tag">FFmpeg</span><span class="tag">Tableau</span>
+            <span class="tag">Docker</span><span class="tag">Azure</span><span class="tag">Git</span><span class="tag">OpenCV</span><span class="tag">FFmpeg</span><span class="tag">ROS</span>
           </div>
         </div>
       </div>
@@ -761,7 +761,7 @@
             <div class="project-title">NativeTone</div>
             <div class="project-subtitle">AI Video Dubbing Pipeline</div>
             <p class="project-desc">
-              End-to-end automated video dubbing system integrating speaker diarization (Pyannote) and ASR (OpenAI Whisper) with prosody-preserving voice cloning via Coqui XTTS v2. Supports multi-speaker, multilingual dubbing with frame-accurate A/V sync using FFmpeg and MoviePy.
+              Multi-stage AI data pipeline ingesting raw video through ASR (Whisper), speaker diarization (Pyannote), and voice cloning (XTTS v2). Engineered a frame-accurate audio-video sync layer with FFmpeg and MoviePy, reducing manual dubbing effort to near zero across multiple languages and speakers.
             </p>
             <div class="project-stack">
               <span class="tag">OpenAI Whisper</span><span class="tag">Pyannote</span><span class="tag">Coqui XTTS v2</span><span class="tag">FFmpeg</span><span class="tag">MoviePy</span>
@@ -776,7 +776,7 @@
             <div class="project-title">Letterboxd Recommender</div>
             <div class="project-subtitle">Hybrid Recommendation Engine</div>
             <p class="project-desc">
-              Hybrid recommendation engine combining SVD Collaborative Filtering with Content-Based filtering, processing 25M+ ratings from Letterboxd. Features RapidFuzz entity matching for ETL, memory-efficient matrix factorizations, and an explainable AI layer using TF-IDF and Jaccard Similarity.
+              Built a scalable ETL pipeline ingesting 25M+ Letterboxd ratings, resolving cross-dataset entity mismatches with RapidFuzz fuzzy matching. Trained an SVD collaborative filtering model paired with a content-based ranker, and added a TF-IDF + Jaccard explainability layer for transparent recommendations.
             </p>
             <div class="project-stack">
               <span class="tag">SVD</span><span class="tag">RapidFuzz</span><span class="tag">TF-IDF</span><span class="tag">Pandas</span><span class="tag">NumPy</span>
@@ -791,7 +791,7 @@
             <div class="project-title">Off-Road Terrain Segmentation</div>
             <div class="project-subtitle">Semantic Segmentation · ResNet18 + U-Net</div>
             <p class="project-desc">
-              Pixel-level terrain segmentation for off-road environments using a ResNet18 encoder + U-Net decoder architecture in PyTorch. Feature extractor selection informed by t-SNE cluster separability analysis. Evaluated with IoU, F1, and Recall.
+              Designed a data cleaning and augmentation pipeline for off-road imagery, then trained a ResNet18 + U-Net segmentation model in PyTorch. Used t-SNE cluster separability analysis to select the optimal feature encoder. Benchmarked with IoU, F1, and Recall metrics.
             </p>
             <div class="project-stack">
               <span class="tag">PyTorch</span><span class="tag">ResNet18</span><span class="tag">U-Net</span><span class="tag">t-SNE</span><span class="tag">OpenCV</span>
@@ -855,9 +855,9 @@
           <div class="timeline-role">Graduate Student Researcher</div>
           <div class="timeline-org">The Aloha Project – AI Reinforce MedTech Program · Los Angeles, CA</div>
           <ul class="timeline-bullets">
-            <li>Enabled hands-free robot task execution via speech-based LLM control (OpenAI Whisper + ROS)</li>
-            <li>Designed multi-step voice command system for task chaining beyond single-action control</li>
-            <li>Deployed AI-driven automation with cross-functional robotics and biomedical teams</li>
+            <li>Engineered speech-to-action ML pipeline (OpenAI Whisper + ROS) for real-time LLM-driven robot control</li>
+            <li>Designed multi-step voice command parsing system, structuring unstructured audio into executable task sequences</li>
+            <li>Automated lab data workflows, reducing manual intervention and improving operational throughput</li>
           </ul>
         </div>
 
@@ -866,9 +866,9 @@
           <div class="timeline-role">Research Assistant</div>
           <div class="timeline-org">Single-Cell Analysis Using Hi-GPT · Indianapolis, IN</div>
           <ul class="timeline-bullets">
-            <li>Modeled single-cell RNA-seq data as heterogeneous graphs, enabling LLM-based biological analysis</li>
-            <li>Fine-tuned Hi-GPT via instruction tuning for clustering and classification tasks</li>
-            <li>Enabled graph-level and subgraph-level biological reasoning beyond traditional models</li>
+            <li>Transformed high-dimensional RNA-seq data (cells × genes) into heterogeneous graph structures for ML analysis</li>
+            <li>Built fine-tuning pipeline for Hi-GPT with custom instruction datasets; evaluated clustering quality and classification accuracy</li>
+            <li>Applied graph ML to extract subgraph-level biological signals beyond traditional tabular modeling</li>
           </ul>
         </div>
 
@@ -877,9 +877,9 @@
           <div class="timeline-role">Research Intern</div>
           <div class="timeline-org">Datawiz-IN Scholars Program · Indianapolis, IN</div>
           <ul class="timeline-bullets">
-            <li>Fine-tuned scGPT for Alzheimer's vs. healthy brain cell classification; Macro F1 of 0.986</li>
-            <li>Reduced evaluation runtime across 12 individuals to ~3 minutes</li>
-            <li>Applied SHAP-based interpretability for gene-level disease attribution</li>
+            <li>Developed end-to-end ML classification pipeline on 13,214-nuclei RNA-seq dataset; achieved Macro F1 of 0.986</li>
+            <li>Optimized data preprocessing and evaluation workflows across 12 patient datasets, cutting runtime to ~3 minutes</li>
+            <li>Produced SHAP feature importance analysis to surface gene-level drivers of Alzheimer's for stakeholder reporting</li>
           </ul>
         </div>
 
@@ -888,9 +888,9 @@
           <div class="timeline-role">Research Assistant</div>
           <div class="timeline-org">Vehicle Interaction Recognition and Behavior Classification · Indianapolis, IN</div>
           <ul class="timeline-bullets">
-            <li>Built video-based vehicle interaction prediction system with YOLO + trajectory profiling</li>
-            <li>Co-developed center-line trajectory refinement algorithm for ground truth correction</li>
-            <li>Fine-tuned SegFormer for 14-class interaction segmentation; evaluated with IoU and Macro F1</li>
+            <li>Built automated data processing pipeline extracting motion/width profiles from raw video using YOLO detection</li>
+            <li>Co-developed center-line trajectory algorithm to programmatically detect and correct label noise in 400+ training samples</li>
+            <li>Trained SegFormer on a 14-class segmentation task; reported IoU and Macro F1 to research advisor</li>
           </ul>
         </div>
 
@@ -911,10 +911,10 @@
         </div>
         <div>
           <div class="contact-links">
-            <a href="mailto:atharva.naik2002@gmail.com" class="contact-link">
+            <a href="/cdn-cgi/l/email-protection#8eeffae6effcf8efa0e0efe7e5bcbebebccee9e3efe7e2a0ede1e3" class="contact-link">
               <div>
                 <div class="contact-link-label">Email</div>
-                atharva.naik2002@gmail.com
+                <span class="__cf_email__" data-cfemail="7a1b0e121b080c1b54141b1311484a4a483a1d171b131654191517">[email&#160;protected]</span>
               </div>
             </a>
             <a href="https://www.linkedin.com/in/atharva-naik-56290a257/" target="_blank" class="contact-link">
@@ -942,19 +942,9 @@
     </div>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // Scroll reveal
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => entry.target.classList.add('visible'), i * 80);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    reveals.forEach(el => observer.observe(el));
-  </script>
-
-</body>
-</html>
+        if (entry.isInte
