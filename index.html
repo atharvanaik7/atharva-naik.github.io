@@ -16,11 +16,11 @@
       --text: #e8e4dc;
       --text-muted: #6b6560;
       --text-dim: #3d3a36;
-      --accent: #c8a97e;
-      --accent-dim: #8a6e4e;
-      --accent-glow: rgba(200, 169, 126, 0.08);
+      --accent: #cc0000;
+      --accent-dim: #990000;
+      --accent-glow: rgba(204, 0, 0, 0.08);
       --red: #c87e7e;
-      --green: #7ec88e;
+      --green: #ffcc00;
     }
 
     html { scroll-behavior: smooth; }
@@ -399,7 +399,7 @@
 
     .research-type.poster {
       color: var(--green);
-      border-color: #4e8a5a;
+      border-color: #b89600;
     }
 
     .research-title {
@@ -612,53 +612,27 @@
 
     /* SCROLLED-IN */
     .reveal {
-      opacity: 0;
-      transform: translateY(16px);
+      opacity: 1;
+      transform: translateY(0);
       transition: opacity 0.6s ease, transform 0.6s ease;
     }
 
-    .reveal.visible {
+    .reveal.animate {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+
+    .reveal.animate.visible {
       opacity: 1;
       transform: translateY(0);
     }
 
-    /* STAT ROW */
-    .stat-row {
-      display: flex;
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      margin-bottom: 64px;
-    }
-
-    .stat {
-      flex: 1;
-      background: var(--bg);
-      padding: 24px 28px;
-    }
-
-    .stat-value {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 36px;
-      font-weight: 300;
-      color: var(--accent);
-      line-height: 1;
-      margin-bottom: 6px;
-    }
-
-    .stat-label {
-      font-size: 10px;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--text-dim);
-    }
 
     /* RESPONSIVE */
     @media (max-width: 640px) {
       .skills-grid { grid-template-columns: 1fr; }
       .contact-grid { grid-template-columns: 1fr; gap: 40px; }
       .project-card { grid-template-columns: 1fr; }
-      .stat-row { flex-wrap: wrap; }
       nav .inner { padding: 0 16px; }
       .container { padding: 0 16px; }
     }
@@ -702,24 +676,6 @@
   <section id="skills">
     <div class="container">
       <div class="section-label">Skills & Stack</div>
-      <div class="stat-row reveal">
-        <div class="stat">
-          <div class="stat-value">0.986</div>
-          <div class="stat-label">Macro F1 — scGPT</div>
-        </div>
-        <div class="stat">
-          <div class="stat-value">25M+</div>
-          <div class="stat-label">Ratings processed</div>
-        </div>
-        <div class="stat">
-          <div class="stat-value">14</div>
-          <div class="stat-label">Interaction classes</div>
-        </div>
-        <div class="stat">
-          <div class="stat-value">2</div>
-          <div class="stat-label">Research papers</div>
-        </div>
-      </div>
       <div class="skills-grid reveal">
         <div class="skill-cell">
           <div class="skill-label">Languages</div>
