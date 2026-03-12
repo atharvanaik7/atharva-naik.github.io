@@ -18,9 +18,10 @@
       --text-dim: #3d3a36;
       --accent: #cc0000;
       --accent-dim: #990000;
-      --accent-glow: rgba(204, 0, 0, 0.08);
-      --red: #c87e7e;
-      --green: #ffcc00;
+      --accent-glow: rgba(204, 0, 0, 0.07);
+      --gold: #ffcc00;
+      --gold-dim: #c9a200;
+      --gold-glow: rgba(255, 204, 0, 0.07);
     }
 
     html { scroll-behavior: smooth; }
@@ -94,7 +95,7 @@
       font-family: 'Cormorant Garamond', serif;
       font-size: 18px;
       font-weight: 300;
-      color: var(--accent);
+      color: var(--gold);
       letter-spacing: 0.05em;
       text-decoration: none;
     }
@@ -114,7 +115,7 @@
       transition: color 0.2s;
     }
 
-    .nav-links a:hover { color: var(--accent); }
+    .nav-links a:hover { color: var(--gold); }
 
     /* HERO */
     #hero {
@@ -133,7 +134,7 @@
       font-size: 11px;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--accent);
+      color: var(--gold);
       margin-bottom: 24px;
       display: flex;
       align-items: center;
@@ -145,7 +146,7 @@
       display: block;
       width: 32px;
       height: 1px;
-      background: var(--accent);
+      background: var(--gold);
     }
 
     h1 {
@@ -240,6 +241,10 @@
       background: var(--border);
     }
 
+    .section-label {
+      color: var(--gold-dim);
+    }
+
     h2 {
       font-family: 'Cormorant Garamond', serif;
       font-size: clamp(32px, 5vw, 52px);
@@ -273,7 +278,7 @@
       font-size: 10px;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--accent-dim);
+      color: var(--gold-dim);
       margin-bottom: 10px;
     }
 
@@ -317,7 +322,7 @@
 
     .project-card:hover .project-arrow {
       transform: translate(4px, -4px);
-      color: var(--accent);
+      color: var(--gold);
     }
 
     .project-number {
@@ -338,7 +343,7 @@
 
     .project-subtitle {
       font-size: 11px;
-      color: var(--accent-dim);
+      color: var(--gold-dim);
       letter-spacing: 0.05em;
       margin-bottom: 14px;
       font-style: italic;
@@ -465,7 +470,7 @@
       top: 6px;
       width: 7px;
       height: 7px;
-      border: 1px solid var(--accent);
+      border: 1px solid var(--gold);
       background: var(--bg);
       transform: rotate(45deg);
     }
@@ -473,7 +478,7 @@
     .timeline-date {
       font-size: 10px;
       letter-spacing: 0.15em;
-      color: var(--accent-dim);
+      color: var(--gold-dim);
       margin-bottom: 6px;
       text-transform: uppercase;
     }
@@ -559,16 +564,16 @@
     }
 
     .contact-link:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-      background: var(--accent-glow);
+      border-color: var(--gold);
+      color: var(--gold);
+      background: var(--gold-glow);
     }
 
     .contact-link-label {
       font-size: 9px;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--text-dim);
+      color: var(--gold-dim);
       margin-bottom: 2px;
     }
 
@@ -728,7 +733,22 @@
 
         <div class="project-card reveal">
           <div>
-            <div class="project-number">02 / Dec 2025 — Jan 2026</div>
+            <div class="project-number">02 / Apr 2025</div>
+            <div class="project-title">ChatDB</div>
+            <div class="project-subtitle">Natural Language Database Interface · MySQL & MongoDB</div>
+            <p class="project-desc">
+              Natural language interface for querying both MySQL and MongoDB databases using Google Gemini 2.0 Flash. Built an ETL pipeline to load and normalize two datasets (Bike Store, Famous Paintings) across relational and document-based schemas. Features automatic query error correction with up to 3 retry attempts and seamless DBMS switching mid-session.
+            </p>
+            <div class="project-stack">
+              <span class="tag">Python</span><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">Gemini 2.0</span><span class="tag">ETL</span><span class="tag">NLP</span>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </div>
+
+        <div class="project-card reveal">
+          <div>
+            <div class="project-number">03 / Dec 2025 — Jan 2026</div>
             <div class="project-title">Letterboxd Recommender</div>
             <div class="project-subtitle">Hybrid Recommendation Engine</div>
             <p class="project-desc">
@@ -743,7 +763,7 @@
 
         <div class="project-card reveal">
           <div>
-            <div class="project-number">03 / Nov 2023 — Dec 2023</div>
+            <div class="project-number">04 / Nov 2023 — Dec 2023</div>
             <div class="project-title">Off-Road Terrain Segmentation</div>
             <div class="project-subtitle">Semantic Segmentation · ResNet18 + U-Net</div>
             <p class="project-desc">
