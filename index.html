@@ -727,6 +727,9 @@
             <div class="project-stack">
               <span class="tag">OpenAI Whisper</span><span class="tag">Pyannote</span><span class="tag">Coqui XTTS v2</span><span class="tag">FFmpeg</span><span class="tag">MoviePy</span>
             </div>
+            <div style="margin-top: 16px;">
+              <a href="https://github.com/atharvanaik7/NativeTone" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+            </div>
           </div>
           <div class="project-arrow">↗</div>
         </div>
@@ -752,13 +755,17 @@
         <div class="project-card reveal">
           <div>
             <div class="project-number">03 / Dec 2025 — Jan 2026</div>
-            <div class="project-title">CineMatch - Letterboxd Recommender</div>
-            <div class="project-subtitle">Hybrid Recommendation Engine</div>
+            <div class="project-title">CineMatch</div>
+            <div class="project-subtitle">Personalized Movie Recommendation System</div>
             <p class="project-desc">
-              Built a scalable ETL pipeline ingesting 25M+ Letterboxd ratings, resolving cross-dataset entity mismatches with RapidFuzz fuzzy matching. Trained an SVD collaborative filtering model paired with a content-based ranker, and added a TF-IDF + Jaccard explainability layer for transparent recommendations.
+              CLI tool that maps your personal Letterboxd export to the MovieLens-25M dataset using RapidFuzz fuzzy title matching. Trains an SVD model (Surprise) on 25M ratings to predict scores for unwatched films, with optional KNN for item-item similarity. Each recommendation includes a "because you liked..." explanation generated via TF-IDF synopsis similarity, genre overlap, and SVD patterns. Supports runtime and popularity filtering via the TMDB API.
             </p>
             <div class="project-stack">
-              <span class="tag">SVD</span><span class="tag">RapidFuzz</span><span class="tag">TF-IDF</span><span class="tag">Pandas</span><span class="tag">NumPy</span>
+              <span class="tag">SVD</span><span class="tag">RapidFuzz</span><span class="tag">TF-IDF</span><span class="tag">Surprise</span><span class="tag">TMDB API</span><span class="tag">KNN</span><span class="tag">Pandas</span>
+            </div>
+            <div style="margin-top: 16px; display: flex; gap: 10px;">
+              <a href="https://atharvanaik7.github.io/CineMatch/" target="_blank" class="btn btn-primary">Live Site ↗</a>
+              <a href="https://github.com/atharvanaik7/CineMatch" target="_blank" class="btn btn-ghost">GitHub ↗</a>
             </div>
           </div>
           <div class="project-arrow">↗</div>
